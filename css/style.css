@@ -1,7 +1,8 @@
 .main-bg-roxo {background-color: #B480AE !important;}
 .main-bg-vermelho {background-color: #EC8C8D !important;}
 .main-bg-mostarda {background-color: #DBDA99 !important;}
-.main-bg-amarelo {height: 100% ;background-color: #FBFBC7 !important;}
+.main-bg-amarelo {background-color: #FBFBC7 !important;}
+.main-bg-amarelo-height {height: 100% ;background-color: #FBFBC7 !important;}
 .main-bg-branco {background-color: #FFF !important;}
 
 .main-text-roxo {color: #B480AE !important;}
