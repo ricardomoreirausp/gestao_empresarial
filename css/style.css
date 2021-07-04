@@ -9,3 +9,23 @@
 .main-text-vermelho {color: #EC8C8D !important;}
 .main-text-mostarda {color: #DBDA99 !important;}
 .main-text-amarelo {color: #FBFBC7!important;}
+
+
+.no-print {
+    display: block;
+}
+
+.only-print {
+    display: none;
+}
+
+@media print {
+
+    .no-print {
+        display: none;
+    }
+
+    .only-print {
+        display: block;
+    }
+}
