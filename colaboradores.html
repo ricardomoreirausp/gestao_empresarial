@@ -1,0 +1,120 @@
+<html>
+<head>
+
+<link href="imagens/avaliacao.png" rel="icon" type="image/x-icon" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" charset="utf-8">
+<title>Avaliação</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="main-bg-white">
+	<!-- Barra de Menu -->
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-dark main-bg-roxo">
+			<a class="navbar-brand" href="home.html">
+				<img src="imagens/avaliacao.png" style="width: 80px;">
+				Sistema de Avaliação
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link"  href="index.html" title="voltar para tela de login">@Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+	
+	<section class="container main-bg-amarelo mb-1">
+		<h3 class="text-center p-1 mb-3">Avaliações <span id="ano_semestre"></span></h3>
+		<h3 class="text-center p-1 mb-3">Lista de Colaboradores do(a) Luana</h3>
+		
+		<div class="row justify-content-center">
+			<div class="col-auto d-none d-md-block">
+				<table class="table table-hover table-striped table-sm">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="row">Subordinados</th>
+							<th class="text-center">Desempenho</th>
+							<th class="text-center">Comportamento</th>
+							<th class="text-center">Habilidades Sociais e Pessoais</th>
+							<th class="text-center">Total</th>
+							<th/>
+							<th/>
+						</tr>
+					</thead>
+			
+					<tbody>
+						<tr>
+							<td class="align-middle">
+								<a href="avaliar.html">João Carlos</a>
+							</td>
+							<td class="text-center align-middle">9</td>
+							<td class="text-center align-middle">7,5</td>
+							<td class="text-center align-middle">7</td>
+							<td class="text-center align-middle">7,8</td>
+							<td class="text-center align-middle">
+								<a class="btn btn-primary" href="avaliar.html">avaliar</a>
+							</td>
+							<td class="text-center align-middle">
+								<div class="row">
+									<div class="col-auto ml-auto">
+										<a class="btn btn-success" href="relatorio.html" target="_blank">Relatorio</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="col-auto d-md-none">	
+				<table class="table table-hover table-striped table-sm table-responsive">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="row">Subordinados</th>
+							<th/>
+							<th/>
+						</tr>
+					</thead>
+			
+					<tbody>
+						<tr>
+							<td class="align-middle">
+								<a href="avaliar.html">João Carlos</a>
+							</td>
+							<td class="text-center align-middle">
+								<a class="btn btn-primary" href="avaliar.html">avaliar</a>
+							</td>
+							<td class="text-center align-middle">
+								<div class="row">
+									<div class="col-auto ml-auto">
+										<a class="btn btn-success" href="relatorio.html" target="_blank">Relatorio</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script>
+		document.getElementById("ano_semestre").innerHTML = localStorage.ano_semestre;
+	</script>
+</body>
+</html>

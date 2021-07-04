@@ -1,0 +1,180 @@
+<html>
+<head>
+
+<link href="imagens/avaliacao.png" rel="icon" type="image/x-icon" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" charset="utf-8">
+<title>Avaliação</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="main-bg-branco">
+	<!-- Barra de Menu -->
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-dark main-bg-roxo">
+			<a class="navbar-brand" href="home.html">
+				<img src="imagens/avaliacao.png" style="width: 80px;">
+				Sistema de Avaliação
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link"  href="index.html" title="voltar para tela de login">@Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+
+	<section class="container main-bg-amarelo mb-1">
+		<h3 class="text-center p-1 mb-3">Avaliação do(a) João Carlos</h3>
+	
+		<form method="post" enctype="multipart/form-data" >
+			<div class="row">
+				<div class="col-12">
+					<div class="progress">
+  						<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-12">
+					<div class="accordion" id="accordionExample">
+						<div class="card border-primary">
+							<div class="card-header p-0">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Desempenho</button>
+								</h2>
+							</div>
+		
+							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body p-2">
+									<div class="input-group input-group-sm" title="está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade">
+								        <div class="input-group-prepend">
+								          <div class="input-group-text">Eficiência</div>
+								        </div>
+			        					<input type="number" class="form-control" min="0" max="10" required="required"/>
+			      					</div>
+			      					<div class="input-group input-group-sm mt-1" title="está relacionado a qualidade das entregas e ao cumprimento das metas definidas pelos líderes">
+								        <div class="input-group-prepend">
+								          <div class="input-group-text">Eficácia</div>
+								        </div>
+			        					<input type="number" class="form-control" min="0" max="10" required="required"/>
+			      					</div>
+								</div>
+							</div>
+						</div>
+						<div class="card border-primary">
+							<div class="card-header p-0">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Comportamento</button>
+								</h2>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="card-body p-2">
+									<div class="input-group input-group-sm" title="avalia a postura do liderado em relação a disponibilidade, assiduidade e forma de expressão no ambiente de trabalho">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Postura</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>
+									<div class="input-group input-group-sm mt-1" title="avalia o comportamento do liderado diante de momentos de tensões, situações complexas e prazos sem flexibilidade">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Resiliencia</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>
+									<div class="input-group input-group-sm mt-1" title="comportamento diante de situações em que envolvem atividades fora do cotidiano do liderado. Ainda avalia o aprendizado para execução de uma nova atividade, ou projeto novo">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Desafios</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>
+									<div class="input-group input-group-sm mt-1" title="avalia o comportamento do liderado diante de equívocos cometidos, apresentação dos reais resultados do seu trabalho e o posicionamento em relação aos ruídos de informações do ambiente de trabalho">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Ética</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>	 
+				      			</div>     					      					      				
+							</div>
+						</div>
+						<div class="card border-primary">
+							<div class="card-header p-0">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Habilidades Sociais e Pessoais</button>
+								</h2>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div class="card-body p-2">
+									<div class="input-group input-group-sm" title="como o colaborador atua diante da resolução de problemas no seu dia a dia e se o liderado é ativo ou reativo nestas situações">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Resolução de Problemas</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>
+									<div class="input-group input-group-sm mt-1" title="comunicação com todos do ambiente do trabalho. Considera a habilidade para emissão, recepção e feedback das mensagens, seja por meio verbal ou escrito">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Comunicação</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>	
+									<div class="input-group input-group-sm mt-1" title="habilidade em se dispor em ajudar na execução das atividades, sem a necessidade da solicitação de outra pessoa">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Proatividade</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>
+									<div class="input-group input-group-sm mt-1" title="habilidade de se relacionar de forma educada e cordial com todos os alunos da equipe: independente do cargo, classe social, orientação sexual, cor e etnia">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Relacionamento Interpessoal</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>
+									<div class="input-group input-group-sm mt-1" title="habilidade do funcionário em compartilhar seus conhecimentos com o time, os status das suas atividades e auxílio na execução das atividades nas quais têm maior domínio">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Colaboração com a Equipe</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>
+									<div class="input-group input-group-sm mt-1" title="relacionamento com o time, no posicionamento em relação à possíveis indisposições da equipe ou intrigas">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Relacionamento com a Equipe</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>
+									<div class="input-group input-group-sm mt-1" title="aderência aos valores e diretrizes da empresa refere-se à habilidade do funcionário em adotar a cultura organizacional, a missão e visão da empresa">
+									    <div class="input-group-prepend">
+									    	<div class="input-group-text">Valores e Diretrizes da Empresa</div>
+									    </div>
+				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
+				      				</div>			      								      								      								      								      								      												
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-auto ml-auto">
+					<button type="submit" class="btn btn-primary">Salvar</button>
+<!-- 					<a class="btn btn-primary" href="avaliar.html">Salvar</a> -->
+				</div>
+			</div>
+		</form>
+	</section>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
