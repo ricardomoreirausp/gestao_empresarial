@@ -11,10 +11,6 @@
 .main-text-amarelo {color: #FBFBC7!important;}
 
 
-.no-print {
-    display: block;
-}
-
 .only-print {
     display: none;
 }
