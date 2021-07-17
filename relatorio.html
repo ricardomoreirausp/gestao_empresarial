@@ -13,8 +13,10 @@
 </head>
 <body>
 	<section class="container mb-1 mt-1">
-		<div class="row float-right">
-			<button onclick="window.print()" class="btn btn-info no-print">Imprimir</button>
+		<div class="row">
+			<div class="col-12">
+				<button onclick="window.print()" class="btn btn-info no-print float-right">Imprimir</button>
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-12">
@@ -26,7 +28,7 @@
 				<h5><b>Avaliador:</b></h5>
 			</div>
 			<div class="col-md-10 col-7">
-				<h5>Luana</h5>
+				<h5 id="exibaNome"></h5>
 			</div>
 			<div class="col-md-2 col-5">
 				<h5><b>Colaborador:</b></h5>
@@ -224,6 +226,14 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script>
+		if(localStorage.nome != "") {
+			document.getElementById("exibaNome").innerHTML = localStorage.nome;
+		} else {
+			document.getElementById("exibaNome").innerHTML = "Ligia";
+		}
+	</script>
 
 </body>
 </html>

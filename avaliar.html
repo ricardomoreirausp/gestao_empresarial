@@ -9,6 +9,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
+<link href="css/fonts/css/all.css" rel="stylesheet">
 
 </head>
 <body class="main-bg-branco">
@@ -35,7 +36,7 @@
 	<section class="container main-bg-amarelo-height mb-1">
 		<h3 class="text-center p-1 mb-3">Avaliação do(a) João Carlos</h3>
 	
-		<form method="post" enctype="multipart/form-data" >
+		<form method="post" enctype="multipart/form-data">
 			<div class="row">
 				<div class="col-12">
 					<div class="progress">
@@ -47,114 +48,167 @@
 				<div class="col-12">
 					<div class="accordion" id="accordionExample">
 						<div class="card border-primary">
-							<div class="card-header p-0">
+							<div class="card-header">
 								<h2 class="mb-0">
 									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Desempenho</button>
 								</h2>
 							</div>
 		
 							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-								<div class="card-body p-2">
-									<div class="input-group input-group-sm" title="está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade">
-								        <div class="input-group-prepend">
-								          <div class="input-group-text">Eficiência</div>
-								        </div>
-			        					<input type="number" class="form-control" min="0" max="10" required="required"/>
-			      					</div>
-			      					<div class="input-group input-group-sm mt-1" title="está relacionado a qualidade das entregas e ao cumprimento das metas definidas pelos líderes">
-								        <div class="input-group-prepend">
-								          <div class="input-group-text">Eficácia</div>
-								        </div>
-			        					<input type="number" class="form-control" min="0" max="10" required="required"/>
-			      					</div>
+								<div class="card-body p-4">
+									<div class="form-group row">
+										<label class="col-sm-2 col-form-label">Eficiência</label>
+										
+										<div class="input-group col-sm-10">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="está relacionado a eficiência do liderado em realizar entregas no prazo e dentro do orçamento estabelecido para a atividade"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-sm-2 col-form-label">Eficácia</label>
+										
+										<div class="input-group col-sm-10">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend1"><span class="fa fa-info-circle" title="está relacionado a qualidade das entregas e ao cumprimento das metas definidas pelos líderes"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend1" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="card border-primary">
-							<div class="card-header p-0">
+							<div class="card-header">
 								<h2 class="mb-0">
 									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Comportamento</button>
 								</h2>
 							</div>
 							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-								<div class="card-body p-2">
-									<div class="input-group input-group-sm" title="avalia a postura do liderado em relação a disponibilidade, assiduidade e forma de expressão no ambiente de trabalho">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Postura</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>
-									<div class="input-group input-group-sm mt-1" title="avalia o comportamento do liderado diante de momentos de tensões, situações complexas e prazos sem flexibilidade">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Resiliencia</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>
-									<div class="input-group input-group-sm mt-1" title="comportamento diante de situações em que envolvem atividades fora do cotidiano do liderado. Ainda avalia o aprendizado para execução de uma nova atividade, ou projeto novo">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Desafios</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>
-									<div class="input-group input-group-sm mt-1" title="avalia o comportamento do liderado diante de equívocos cometidos, apresentação dos reais resultados do seu trabalho e o posicionamento em relação aos ruídos de informações do ambiente de trabalho">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Ética</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>	 
+								<div class="card-body p-4">
+									<div class="form-group row">
+										<label class="col-sm-2 col-form-label">Postura</label>
+										
+										<div class="input-group col-sm-10">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="avalia a postura do liderado em relação a disponibilidade, assiduidade e forma de expressão no ambiente de trabalho"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-2 col-form-label">Resiliência</label>
+										
+										<div class="input-group col-sm-10">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="avalia o comportamento do liderado diante de momentos de tensões, situações complexas e prazos sem flexibilidade"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-2 col-form-label">Desafios</label>
+										
+										<div class="input-group col-sm-10">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="comportamento diante de situações em que envolvem atividades fora do cotidiano do liderado. Ainda avalia o aprendizado para execução de uma nova atividade, ou projeto novo"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-2 col-form-label">Ética</label>
+										
+										<div class="input-group col-sm-10">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="avalia o comportamento do liderado diante de equívocos cometidos, apresentação dos reais resultados do seu trabalho e o posicionamento em relação aos ruídos de informações do ambiente de trabalho"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
 				      			</div>     					      					      				
 							</div>
 						</div>
 						<div class="card border-primary">
-							<div class="card-header p-0">
+							<div class="card-header">
 								<h2 class="mb-0">
 									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Habilidades Sociais e Pessoais</button>
 								</h2>
 							</div>
 							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-								<div class="card-body p-2">
-									<div class="input-group input-group-sm" title="como o colaborador atua diante da resolução de problemas no seu dia a dia e se o liderado é ativo ou reativo nestas situações">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Resolução de Problemas</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>
-									<div class="input-group input-group-sm mt-1" title="comunicação com todos do ambiente do trabalho. Considera a habilidade para emissão, recepção e feedback das mensagens, seja por meio verbal ou escrito">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Comunicação</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>	
-									<div class="input-group input-group-sm mt-1" title="habilidade em se dispor em ajudar na execução das atividades, sem a necessidade da solicitação de outra pessoa">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Proatividade</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>
-									<div class="input-group input-group-sm mt-1" title="habilidade de se relacionar de forma educada e cordial com todos os alunos da equipe: independente do cargo, classe social, orientação sexual, cor e etnia">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Relacionamento Interpessoal</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>
-									<div class="input-group input-group-sm mt-1" title="habilidade do funcionário em compartilhar seus conhecimentos com o time, os status das suas atividades e auxílio na execução das atividades nas quais têm maior domínio">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Colaboração com a Equipe</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>
-									<div class="input-group input-group-sm mt-1" title="relacionamento com o time, no posicionamento em relação à possíveis indisposições da equipe ou intrigas">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Relacionamento com a Equipe</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>
-									<div class="input-group input-group-sm mt-1" title="aderência aos valores e diretrizes da empresa refere-se à habilidade do funcionário em adotar a cultura organizacional, a missão e visão da empresa">
-									    <div class="input-group-prepend">
-									    	<div class="input-group-text">Valores e Diretrizes da Empresa</div>
-									    </div>
-				        				<input type="number" class="form-control" min="0" max="10" required="required"/>
-				      				</div>			      								      								      								      								      								      												
+								<div class="card-body p-4">
+									<div class="form-group row">
+										<label class="col-sm-3 col-form-label">Resolução de Problemas</label>
+										
+										<div class="input-group col-sm-9">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="Como o colaborador atua diante da resolução de problemas no seu dia a dia e se o liderado é ativo ou reativo nestas situações"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-3 col-form-label">Comunicação</label>
+										
+										<div class="input-group col-sm-9">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="Comunicação com todos do ambiente do trabalho. Considera a habilidade para emissão, recepção e feedback das mensagens, seja por meio verbal ou escrito"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-3 col-form-label">Proatividade</label>
+										
+										<div class="input-group col-sm-9">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="Habilidade em se dispor em ajudar na execução das atividades, sem a necessidade da solicitação de outra pessoa"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-3 col-form-label">Relacionamento Interpessoal</label>
+										
+										<div class="input-group col-sm-9">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="Habilidade de se relacionar de forma educada e cordial com todos os alunos da equipe: independente do cargo, classe social, orientação sexual, cor e etnia"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-3 col-form-label">Colaboração com a Equipe</label>
+										
+										<div class="input-group col-sm-9">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="Habilidade do funcionário em compartilhar seus conhecimentos com o time, os status das suas atividades e auxílio na execução das atividades nas quais têm maior domínio"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-3 col-form-label">Relacionamento com a Equipe</label>
+										
+										<div class="input-group col-sm-9">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="Relacionamento com o time, no posicionamento em relação à possíveis indisposições da equipe ou intrigas"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-3 col-form-label">Valores e Diretrizes da Empresa</label>
+										
+										<div class="input-group col-sm-9">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="Aderência aos valores e diretrizes da empresa refere-se à habilidade do funcionário em adotar a cultura organizacional, a missão e visão da empresa"></span></span>
+											  </div>
+											<input  aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required"/>
+										</div>
+									</div>	      								      								      								      								      								      												
 								</div>
 							</div>
 						</div>
@@ -163,8 +217,7 @@
 			</div>
 			<div class="row mt-2">
 				<div class="col-auto ml-auto">
-					<button type="submit" class="btn btn-primary">Salvar</button>
-<!-- 					<a class="btn btn-primary" href="avaliar.html">Salvar</a> -->
+					<button type="submit" class="btn btn-primary" formaction="colaboradores.html" >Salvar</button>
 				</div>
 			</div>
 		</form>
@@ -175,6 +228,35 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+		var foo = document.querySelector(".foo");
 
+		//Cria uma função que será usando no keyup e no blue
+		var f = maxNumber(10);
+
+		foo.addEventListener('keyup', f);
+		foo.addEventListener('blur', f);
+
+		function maxNumber(max)
+		{
+			var running = false;
+			
+			return function () {
+				//Para evitar conflito entre o blur e o keyup
+				if (running) return;
+				
+				//Bloqueia multiplas chamadas do blur e keyup
+				running = true;
+				
+				//Se o input for maior que 10 ele irá fixa o valor maximo no value
+				if (parseFloat(this.value) > max) {
+					this.value = 10;
+				}
+				
+				//Habilita novamente as chamadas do blur e keyup
+				running = false;
+			};
+		}
+	</script>
 </body>
 </html>

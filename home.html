@@ -33,91 +33,13 @@
 	</section>
 
 	<section class="container main-bg-amarelo-height" >
-		<h1 class="text-center p-1">Luana</h1>
-		<h3 class="text-center">Bem vindo ao Sistema de Avaliação de Colaboradores!!!</h3>
+		<h1 class="text-center p-1" id="exibaNome"></h1>
+		<h3 class="text-center">Bem vindo(a) ao Sistema de Avaliação de Colaboradores!!!</h3>
 		
 		<div class="text-left" style="padding: 30px;">
 
 
-			<div id="accordion">
-				<div class="card">
-				  <div class="card-header" id="headingOne">
-					<h5 class="mb-0">
-					  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-						2021
-					  </button>
-					</h5>
-				  </div>
-			  
-				  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-					<div class="card-body">
-					  
-						<div class="list-group list-group-flush">
-							<a href="colaboradores.html" onclick="setar_ano_semestre(2021,'1°sem')" class="list-group-item list-group-item-action">1/sem</a>
-							<a href="colaboradores.html" onclick="setar_ano_semestre(2021,'2°sem')" class="list-group-item list-group-item-action">2/sem</a>
-						</div>
-					
-					</div>
-				  </div>
-				</div>
-				<div class="card">
-				  <div class="card-header" id="headingTwo">
-					<h5 class="mb-0">
-					  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						2020
-					  </button>
-					</h5>
-				  </div>
-				  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-					<div class="card-body">
-					  
-						<div class="list-group list-group-flush">
-							<a href="colaboradores.html" onclick="setar_ano_semestre(2020,'1°sem')" class="list-group-item list-group-item-action">1/sem</a>
-							<a href="colaboradores.html" onclick="setar_ano_semestre(2020,'2°sem')" class="list-group-item list-group-item-action">2/sem</a>
-						</div>
-					
-					</div>
-				  </div>
-				</div>
-				<div class="card">
-				  <div class="card-header" id="headingThree">
-					<h5 class="mb-0">
-					  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						2019
-					  </button>
-					</h5>
-				  </div>
-				  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-					<div class="card-body">
-					  
-						<div class="list-group list-group-flush">
-							<a href="colaboradores.html" onclick="setar_ano_semestre(2019,'1°sem')" class="list-group-item list-group-item-action">1/sem</a>
-							<a href="colaboradores.html" onclick="setar_ano_semestre(2019,'2°sem')" class="list-group-item list-group-item-action">2/sem</a>
-						</div>
-					
-					</div>
-				  </div>
-				</div>
-				<div class="card">
-				  <div class="card-header" id="headingFour">
-					<h5 class="mb-0">
-					  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-						2018
-					  </button>
-					</h5>
-				  </div>
-				  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-					<div class="card-body">
-					  
-						<div class="list-group list-group-flush">
-							<a href="colaboradores.html" onclick="setar_ano_semestre(2018,'1°sem')" class="list-group-item list-group-item-action">1/sem</a>
-							<a href="colaboradores.html" onclick="setar_ano_semestre(2018,'2°sem')" class="list-group-item list-group-item-action">2/sem</a>
-						</div>
-					
-					</div>
-				  </div>
-				</div>
-			  </div>
+			<a href="colaboradores.html" role="button" class="btn btn-primary btn-lg btn-block">Visualizar os colaboradores</a>
 
 		</div>
 	</section>
@@ -128,11 +50,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script>
-		function setar_ano_semestre(ano, semestre) {
-			localStorage.removeItem("ano_semestre");
-			localStorage.setItem("ano_semestre", ano + "/" + semestre);
-		}
+		document.getElementById("exibaNome").innerHTML = localStorage.nome;
 	</script>
+
 </body>
 
 </html>
