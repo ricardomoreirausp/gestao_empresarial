@@ -1,16 +1,75 @@
-.main-bg-roxo {background-color: #7dc8ca !important;}
-.main-bg-rosxo {background-color: #B480AE !important;}
-.main-bg-vermelho {background-color: #EC8C8D !important;}
-.main-bg-mostarda {background-color: #DBDA99 !important;}
-.main-bg-amarelo {background-color:  #FBFBC7 !important;}
-.main-bg-amarelo-height {height: 100% ;background-color: #FBFBC7 !important;}
-.main-bg-amarelo-heiht {height: 100% ;background-color: #FBFBC7 !important;}
-.main-bg-branco {background-color: #FFF !important;}
+.main-bg-roxo {
+    background-color: #434cbf !important;
+    box-shadow: 5px 10px;
+}
 
-.main-text-roxo {color: #B480AE !important;}
-.main-text-vermelho {color: #EC8C8D !important;}
-.main-text-mostarda {color: #DBDA99 !important;}
-.main-text-amarelo {color: #FBFBC7!important;}
+.main-bg-rosxo {
+    background-color: #B480AE !important;
+}
+
+.main-bg-vermelho {
+    background-color: #EC8C8D !important;
+}
+
+.main-bg-mostarda {
+    background-color: #DBDA99 !important;
+}
+
+.main-bg-amarelo {
+    background-color: #FBFBC7 !important;
+}
+
+.main-bg-amarelo-height {
+    background-color: #ffffff;
+    height: 100%;
+    background-image: url("9814.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 95%;
+}
+
+.main-bg-amarelo-height2 {
+    background-color: #ffffff;
+    height: 100%;
+    background-image: url("9814.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 75%;
+}
+
+.main-bg-branco {
+    background-image: url("inicio.jpeg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 40%;
+    position: relative;
+}
+
+.main-text-roxo {
+    color: #B480AE !important;
+}
+
+.main-text-vermelho {
+    color: #EC8C8D !important;
+}
+
+.main-text-mostarda {
+    color: #DBDA99 !important;
+}
+
+.main-text-amarelo {
+    color: #FBFBC7!important;
+}
+
+h1 {
+    color: #111;
+    font-family: 'Lato', sans-serif;
+    font-size: 54px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 1%;
+}
 
 .table {
     overflow-x: hidden !important;
@@ -21,11 +80,9 @@
 }
 
 @media print {
-
     .no-print {
         display: none;
     }
-
     .only-print {
         display: block;
     }
