@@ -45,13 +45,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-2">
+            <div id="form" class="row mt-2">
                 <div class="col-12">
                     <div class="accordion" id="accordionExample">
                         <div class="card border-primary">
                             <div class="card-header">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Desempenho</button>
+                                    <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Desempenho</a>
                                 </h2>
                             </div>
 
@@ -84,7 +84,7 @@
                         <div class="card border-primary">
                             <div class="card-header">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Comportamento</button>
+                                    <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Comportamento</a>
                                 </h2>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -135,7 +135,7 @@
                         <div class="card border-primary">
                             <div class="card-header">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Habilidades Sociais e Pessoais</button>
+                                    <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Habilidades Sociais e Pessoais</a>
                                 </h2>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -207,7 +207,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text" id="inputGroupPrepend2"><span class="fa fa-info-circle" title="Aderência aos valores e diretrizes da empresa refere-se à habilidade do funcionário em adotar a cultura organizacional, a missão e visão da empresa"></span></span>
                                             </div>
-                                            <input aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="0" max="10" required="required" />
+                                            <input aria-describedby="inputGroupPrepend2" type="number" class="foo form-control" maxlength="2" min="1" max="10" required="required" />
                                         </div>
                                     </div>
                                 </div>
@@ -218,7 +218,8 @@
             </div>
             <div class="row mt-2">
                 <div class="col-auto ml-auto">
-                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Salvar</button>
+                    <button class="btn btn-primary" type="submit" formaction="relatorio.html">Finalizar</button>
+                    <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#exampleModal">Salvar</button>
                 </div>
             </div>
         </form>
@@ -232,7 +233,7 @@
 				  </button>
                     </div>
                     <div class="modal-body">
-                        <p>Você tem certeza que deseja SALVAR este formulário?</p>
+                        <p>Você pretende salvar esta avaliação?</p>
                     </div>
                     <div class="modal-footer">
                         <a href="colaboradores.html" type="button" class="btn btn-primary"> Salvar</a>
@@ -249,32 +250,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
-        var foo = document.querySelector(".foo");
+        var inputs = $('input');
 
-        //Cria uma função que será usando no keyup e no blue
-        var f = maxNumber(10);
+        inputs.on('keyup', verificarInputs);
 
-        foo.addEventListener('keyup', f);
-        foo.addEventListener('blur', f);
-
-        function maxNumber(max) {
-            var running = false;
-
-            return function() {
-                //Para evitar conflito entre o blur e o keyup
-                if (running) return;
-
-                //Bloqueia multiplas chamadas do blur e keyup
-                running = true;
-
-                //Se o input for maior que 10 ele irá fixa o valor maximo no value
-                if (parseFloat(this.value) > max) {
+        function verificarInputs() {
+            inputs.each(function() {
+                if (parseFloat(this.value) > 10) {
                     this.value = 10;
                 }
-
-                //Habilita novamente as chamadas do blur e keyup
-                running = false;
-            };
+            });
         }
     </script>
 </body>
