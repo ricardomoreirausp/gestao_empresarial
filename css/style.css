@@ -16,11 +16,15 @@
 }
 
 .main-bg-amarelo {
-    background-color: #FBFBC7 !important;
+    background-color: #a3c5b0 !important;
+}
+
+.main-bg-amarelo2 {
+    background-color: #669c7b !important;
 }
 
 .main-bg-amarelo-height {
-    background-color: #ffffff;
+    background-color: #fbfbfb;
     height: 100%;
     background-image: url("9814.jpg");
     background-repeat: no-repeat;
@@ -29,12 +33,12 @@
 }
 
 .main-bg-amarelo-height2 {
-    background-color: #ffffff;
+    background-color: #fbfbfb;
     height: 100%;
     background-image: url("9814.jpg");
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 75%;
+    background-position: center 25%;
+    background-size: 55%;
 }
 
 .main-bg-branco {
@@ -43,6 +47,10 @@
     background-position: center bottom;
     background-size: 40%;
     position: relative;
+}
+
+.main-bg-white {
+    background-color: #fbfbfb;
 }
 
 .main-text-roxo {

@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="main-bg-branco">
+<body class="main-bg-white">
     <!-- Barra de Menu -->
     <section>
         <nav class="navbar navbar-expand-lg navbar-dark main-bg-roxo">
@@ -34,7 +34,7 @@
         </nav>
     </section>
 
-    <section class="container main-bg-amarelo-height2 mb-1">
+    <section class="container main-bg-amarelo-height mb-1">
         <h3 class="text-center p-4 mb-3">Avaliação do(a) João Carlos</h3>
 
         <form method="post" enctype="multipart/form-data">
@@ -218,10 +218,29 @@
             </div>
             <div class="row mt-2">
                 <div class="col-auto ml-auto">
-                    <button type="submit" class="btn btn-primary" formaction="colaboradores.html">Salvar</button>
+                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Salvar</button>
                 </div>
             </div>
         </form>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirmação</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Você tem certeza que deseja SALVAR este formulário?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="colaboradores.html" type="button" class="btn btn-primary"> Salvar</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Optional JavaScript -->
