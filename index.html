@@ -21,12 +21,12 @@
             <div class="col-md-5 col-sm-8 mx-auto justify-content-center navbar navbar-expand-lg navbar-dark main-bg-roxo">
                 <a class="navbar-brand">
                     <div>
-                        <form class="form-group mr-auto" action="login" method="post">
+                        <form class="form-group mr-auto" method="get">
                             <input class="form-control mt-1 mr-1" type="text" placeholder="Login" required="required" id="nome" autofocus />
 
                             <input class="form-control mt-1 mr-1" type="password" placeholder="Senha" required="required" />
 
-                            <a class="btn btn-primary mb-5 mt-1 mr-1 " onclick="set_nome(nome.value)" href="home.html">Logar</a>
+                            <button class="btn btn-primary mb-1 mt-1 mr-1 " onclick="set_nome(nome.value)" formaction="home.html">Logar</button>
                         </form>
                     </div>
             </div>
