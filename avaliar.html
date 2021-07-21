@@ -218,8 +218,7 @@
             </div>
             <div class="row mt-2">
                 <div class="col-auto ml-auto">
-                    <button class="btn btn-primary" type="submit" formaction="relatorio.html">Finalizar</button>
-                    <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#exampleModal">Salvar</button>
+                    <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#exampleModal" formaction="relatorio.html">Salvar</button>
                 </div>
             </div>
         </form>
@@ -227,17 +226,17 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Confirmação</h5>
+                        <h5 class="modal-title">Campos inválidos</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				  </button>
                     </div>
                     <div class="modal-body">
-                        <p>Você pretende salvar esta avaliação?</p>
+                        <p>Os campos "Comunicação" e "Colaboração com a Equipe" estão incompletos. <br> Preencha-os para poder salvar a avaliação. </p>
                     </div>
                     <div class="modal-footer">
-                        <a href="colaboradores.html" type="button" class="btn btn-primary"> Salvar</a>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <a href="colaboradores.html" type="button" class="btn btn-primary"> Sair sem salvar</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
                     </div>
                 </div>
             </div>
